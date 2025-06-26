@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract GcoinToken is ERC20, Ownable {
     constructor(address initialOwner)
-        ERC20("Gcoin", "GCN")
+        ERC20("GcoinToken", "GCN")
         Ownable(initialOwner)
     {
         _mint(initialOwner, 1000000 * 10 ** decimals());

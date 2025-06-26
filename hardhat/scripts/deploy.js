@@ -1,20 +1,21 @@
 const hre = require("hardhat");
 
 async function main() {
-    cons [deployer] = await hre.ethers.getSigners();
+    const [deployer] = await hre.ethers.getSigners();
 
     console.log("Deploying with:", deployer.address);
 
-    const Gcoin = await hre.ethers.getContractFactory("Gcoin");
-    const token = await Gcoin.deploy(deployer.address);
+    const GcoinToken = await hre.ethers.getContractFactory("GcoinToken");
+    const token = await GcoinToken.deploy(deployer.address);
 
-    await token.deployed();
+    await token.waitForDeployment();
 
-    console.log("Gcoin Token deployed to:", token.address);
+    const deployedAddrs = await token.getAddress();
+
+    console.log("Gcoin Token deployed to:", deployedAddrs);
 }
 
 main().catch((err) => {
     console.error(err);
     process.exitCode = 1;
-    
 })
