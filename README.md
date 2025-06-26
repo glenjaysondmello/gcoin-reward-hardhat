@@ -185,8 +185,3 @@ MIT License © 2025 Glen Jayson Dmello
 GitHub: [@glenjaysondmello](https://github.com/glenjaysondmello)
 
 ---
-
----
-
-Would you like this exported as a `.md` file or uploaded to your project folder directly?
-```
