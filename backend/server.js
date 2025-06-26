@@ -22,13 +22,14 @@ app.post("/api/reward", async (req, res) => {
   const { to, amount } = req.body;
 
   try {
-    const tx = gcoin.rewardUser(to, parseUnits(amount, 18));
+    const tx = await gcoin.rewardUser(to, parseUnits(amount, 18));
     await tx.wait();
     res.json({ success: true, hash: tx.hash });
   } catch (error) {
     res.json({ success: false, error: error.message });
   }
 });
+
 
 app.listen(5000, () => {
   console.log("Backend is running on Port 5000");
