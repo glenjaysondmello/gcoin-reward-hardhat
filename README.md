@@ -1,8 +1,3 @@
-Here is your complete `README.md` content for the **GcoinToken Full Stack Project**, covering Hardhat, Backend, and Frontend:
-
----
-
-```markdown
 # 🪙 GcoinToken Full Stack DApp
 
 A full-stack ERC-20 token platform for minting and managing **GcoinToken (GCN)** using:
@@ -10,24 +5,6 @@ A full-stack ERC-20 token platform for minting and managing **GcoinToken (GCN)**
 - **Solidity + Hardhat** (Smart Contracts)
 - **Node.js + Express** (Backend API)
 - **React.js + Ethers.js** (Frontend UI)
-
----
-
-## 📁 Project Structure
-
-```
-
-gcoin-token-app/
-├── contracts/           # Solidity smart contracts
-├── scripts/             # Hardhat deployment scripts
-├── backend/             # Node.js Express API
-├── frontend/            # React DApp UI
-├── abi/                 # Shared ABI files
-├── .env                 # Environment variables
-├── .gitignore
-└── README.md
-
-````
 
 ---
 
@@ -137,7 +114,7 @@ npx hardhat run scripts/deploy.js --network localhost
 
 ```bash
 cd backend
-node index.js
+node server.js
 ```
 
 > Runs on `http://localhost:5000`.
@@ -196,12 +173,6 @@ Returns:
 
 ---
 
-## 📸 Screenshots
-
-> *(Optional section — Add DApp screenshots here)*
-
----
-
 ## 📜 License
 
 MIT License © 2025 Glen Jayson Dmello
@@ -211,15 +182,9 @@ MIT License © 2025 Glen Jayson Dmello
 ## 🙌 Author
 
 **Glen Jayson Dmello**
-GitHub: [@glenjayson](https://github.com/glenjayson)
+GitHub: [@glenjaysondmello](https://github.com/glenjaysondmello)
 
 ---
-
-## 💌 Contributions
-
-Pull requests welcome! Open an issue or feature request as needed.
-
-```
 
 ---
 
