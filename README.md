@@ -1,4 +1,4 @@
-# 🪙 GcoinToken Full Stack DApp
+# 🪙 Gcoin Reward Hardhat
 
 A full-stack ERC-20 token platform for minting and managing **GcoinToken (GCN)** using:
 
